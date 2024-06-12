@@ -1,0 +1,33 @@
+<style>
+    .bg-pink {
+      background-color: #ff69b4;
+    }
+    .imageSite img {
+      width: 40px;
+      height: 40px;
+    }
+  </style>
+  <nav class="navbar navbar-expand-lg bg-pink" data-bs-theme="dark">
+    <div class="container-fluid">
+      <div class="imageSite">
+        <img src="../static/images/makeup.png" alt="Makeup Logo">
+      </div>
+      <a class="navbar-brand" href="#">Make-up</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('accueil') }}">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('tous_produits') }}">Nos produits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('categories') }}">Catégories</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
